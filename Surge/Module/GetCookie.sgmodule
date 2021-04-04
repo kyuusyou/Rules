@@ -3,7 +3,7 @@
 #!system=ios
 
 [MITM]
-hostname = %APPEND% mobwsa.ximalaya.com,i.meituan.com,h5.ele.me,credits.bz.mgtv.com,www.52pojie.cn,*.smzdm.com,api.m.jd.com,ifac*.iqiyi.com,*.video.qq.com,v.qq.com,*.bilibili.com,passport.biligame.com,music.163.com,tieba.baidu.com,www.flyertea.com,*.acfun.cn,*.rr.tv,sf-integral-sign-in.weixinjia.net,ccsp-egmas.sf-express.com,passport.suning.com,luckman.suning.com,sign.suning.com, gameapi.suning.com,m.client.10010.com,user-api-prd-mx.wandafilm.com,cms-activity-api-prd-mx.wandafilm.com
+hostname = %APPEND% mobwsa.ximalaya.com,i.meituan.com,h5.ele.me,credits.bz.mgtv.com,www.52pojie.cn,*.smzdm.com,api.m.jd.com,ifac*.iqiyi.com,*.video.qq.com,v.qq.com,*.bilibili.com,passport.biligame.com,music.163.com,tieba.baidu.com,www.flyertea.com,*.acfun.cn,*.rr.tv,sf-integral-sign-in.weixinjia.net,ccsp-egmas.sf-express.com,passport.suning.com,luckman.suning.com,sign.suning.com,gameapi.suning.com,m.client.10010.com,user-api-prd-mx.wandafilm.com,cms-activity-api-prd-mx.wandafilm.com
 
 [Script]
 # > 百度贴吧签到 by chavyleung
@@ -63,10 +63,10 @@ Cookie: 顺丰速运 = type=http-request,pattern=^https?:\/\/ccsp-egmas.sf-expre
 
 # > 苏宁易购 GetCookie by chavyleung
 // 「现金签到」「天天低价」右上角宝箱
-Cookie: 苏宁易购 = type=http-request ^https:\/\/passport.suning.com\/ids\/login$, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js, requires-body=true
-Cookie: 苏宁易购 = type=http-request ^https:\/\/luckman.suning.com\/luck-web\/sign\/api\/clock_sign.do, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js
-Cookie: 苏宁易购 = type=http-request ^https:\/\/sign.suning.com\/sign-web\/m\/promotion\/sign\/doSign.do, script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js
-Cookie: 苏宁易购 = type=http-request ^https:\/\/gameapi.suning.com\/sngame-web\/(api\/signin\/private\/customerSignOperation.do|gateway\/api\/queryPrize.do), script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js
+Cookie: 苏宁易购 = type=http-request,pattern=^https:\/\/passport.suning.com\/ids\/login$,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js, requires-body=true
+Cookie: 苏宁易购 = type=http-request,pattern=^https:\/\/luckman.suning.com\/luck-web\/sign\/api\/clock_sign.do,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js
+Cookie: 苏宁易购 = type=http-request,pattern=^https:\/\/sign.suning.com\/sign-web\/m\/promotion\/sign\/doSign.do,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js
+Cookie: 苏宁易购 = type=http-request,pattern=^https:\/\/gameapi.suning.com\/sngame-web\/(api\/signin\/private\/customerSignOperation.do|gateway\/api\/queryPrize.do),script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js
 
 
 # > 中国联通 GetCookie by blackmatrix7
