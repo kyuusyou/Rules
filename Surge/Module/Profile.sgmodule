@@ -27,7 +27,7 @@ wifi-access-socks5-port = 6153
 # ---(远程控制器)---
 # 允许 Surge 请求查看器或 Surge CLI 进行管理控制。
 # 如果允许由 Wi-Fi 控制则将「127.0.0.1」修改为「0.0.0.0」
-# external-controller-access = kyuusyou@127.0.0.1:6170
+# external-controller-access = password@127.0.0.1:6170
 # ------
 
 # ---(兼容性)---
