@@ -3,7 +3,7 @@
 #!system=ios
 
 [MITM]
-hostname = %APPEND% mobwsa.ximalaya.com,i.meituan.com,h5.ele.me,credits.bz.mgtv.com,www.52pojie.cn,*.smzdm.com,api.m.jd.com,ifac*.iqiyi.com,*.video.qq.com,v.qq.com,*.bilibili.com,passport.biligame.com,music.163.com,tieba.baidu.com,www.flyertea.com,*.acfun.cn,sf-integral-sign-in.weixinjia.net,ccsp-egmas.sf-express.com,user-api-prd-mx.wandafilm.com,cms-activity-api-prd-mx.wandafilm.com
+hostname = %APPEND% mobwsa.ximalaya.com,h5.ele.me,credits.bz.mgtv.com,www.52pojie.cn,*.smzdm.com,api.m.jd.com,ifac*.iqiyi.com,*.video.qq.com,v.qq.com,*.bilibili.com,passport.biligame.com,music.163.com,tieba.baidu.com,*.acfun.cn,sf-integral-sign-in.weixinjia.net,ccsp-egmas.sf-express.com,user-api-prd-mx.wandafilm.com,cms-activity-api-prd-mx.wandafilm.com
 
 [Script]
 # > 百度贴吧签到 by chavyleung
@@ -17,7 +17,8 @@ Cookie: Acfun = type=http-request,pattern=^https:\/\/api\-new\.app\.acfun\.cn\/r
 Cookie: 京东 = type=http-request,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
 
 # > 美团 GetCookie by chavyleung
-Cookie: 美团 = type=http-request,pattern=^https?:\/\/i\.meituan\.com\/evolve\/signin\/signpost\/,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js,requires-body=true
+// i.meituan.com,
+//Cookie: 美团 = type=http-request,pattern=^https?:\/\/i\.meituan\.com\/evolve\/signin\/signpost\/,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js,requires-body=true
 
 # > 饿了么 GetCookie by songyangzz&zZPiglet
 Cookie: 饿了么 = type=http-request,pattern=^https?:\/\/h5\.ele\.me\/restapi\/eus\/v\d\/current_user$,script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemGetCookies.js
@@ -50,7 +51,8 @@ Cookie: 喜马拉雅 = type=http-request,pattern=^https?:\/\/.*\/mobile\-user\/h
 Cookie: 什么值得买 = type=http-request,requires-body=true,pattern=^https?:\/\/zhiyou\.smzdm\.com\/user$,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_signin.js
 
 # > 飞客茶馆 GetCookie by chavyleung
-Cookie: 飞客茶馆 = type=http-request,pattern=^https?:\/\/www\.flyertea\.com\/source\/plugin\/mobile\/mobile\.php\?module=getdata&.*,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/flyertea/flyertea.cookie.js
+//www.flyertea.com,
+//Cookie: 飞客茶馆 = type=http-request,pattern=^https?:\/\/www\.flyertea\.com\/source\/plugin\/mobile\/mobile\.php\?module=getdata&.*,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/flyertea/flyertea.cookie.js
 
 # > 吾爱破解 GetCookie by NobyDa
 Cookie: 吾爱破解 = type=http-request,pattern=^https?:\/\/www\.52pojie\.cn\/home\.php\?,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js
