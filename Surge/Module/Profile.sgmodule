@@ -2,6 +2,8 @@
 #!desc=Basic Config
 
 [General]
+# 隐藏VPN图标
+hide-vpn-icon=true
 # ---(通用)---
 # 延迟测试
 # > Internet 测试 URL
