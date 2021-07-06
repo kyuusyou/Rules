@@ -52,7 +52,7 @@ Cookie: 什么值得买 = type=http-request,requires-body=true,pattern=^https?:\
 
 # > 飞客茶馆 GetCookie by chavyleung
 //www.flyert.com
-Cookie: 飞客茶馆 = type=http-request,pattern=^https?:\/\/www\.flyertea\.com\/source\/plugin\/mobile\/mobile\.php\?module=getdata&.*,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/flyertea/flyertea.cookie.js,requires-body=true
+Cookie: 飞客茶馆 = type=http-request,pattern=^https:\/\/www\.flyert\.com\/source\/plugin\/mobile\/mobile\.php\?module=getdata&.*,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/flyertea/flyertea.cookie.js,requires-body=true
 
 # > 顺丰速运 GetCookie by chavyleung
 Cookie: 顺丰速运 = type=http-request,pattern=^https?:\/\/ccsp-egmas.sf-express.com\/cx-app-member\/member\/app\/user\/universalSign,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.cookie.js,requires-body=true
