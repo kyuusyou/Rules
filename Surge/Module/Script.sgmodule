@@ -5,14 +5,18 @@
 // 部分脚本仅作分享不代表本人观点，请合理使用并力所能及范围内支持正版（。
 
 [MITM]
-hostname = %INSERT% *acs.m.taobao.com,*api.smzdm.com,*.uve.weibo.com,api.weibo.cn,gw.alicdn.com,haojia.m.smzdm.com,mapi.weibo.com,mp.weixin.qq.com,render.alipay.com,weixin110.qq.com,api.picsart.c*,api.meiease.c*,vsco.co
+hostname = %INSERT% *acs.m.taobao.com,*api.smzdm.com,*.uve.weibo.com,api.weibo.cn,gw.alicdn.com,haojia.m.smzdm.com,mapi.weibo.com,render.alipay.com,weixin110.qq.com,api.picsart.c*,api.meiease.c*,vsco.co,mp.weixin.qq.com
 
 [Rule]
 # > WeTV
 DOMAIN,btrace.wetvinfo.com,REJECT
 DOMAIN,mtrace.wetvinfo.com,REJECT
+
+# > 微信公众号
+URL-REGEX,^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad\?,REJECT
+
 # > 微博
-DOMAIN,uve.weibo.com,REJECT
+// DOMAIN,uve.weibo.com,REJECT
 # > 什么值得买
 URL-REGEX,^https?:\/\/((app-)?api|haojia\.m)\.smzdm\.com\/((v\d\/)?uti|detail_modu)l\/(loading|banner),REJECT
 # > 淘宝
@@ -34,9 +38,6 @@ wb_ad.js = type=http-response,requires-body=1,max-size=-1,pattern=^https?:\/\/m?
 
 # > 微博启动页去广告 by yichahucha
 wb_launch.js = type=http-response,requires-body=1,pattern=^https?:\/\/(sdk|wb)app\.uve\.weibo\.com(\/interface\/sdk\/sdkad.php|\/wbapplua\/wbpullad.lua),script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_launch.js
-
-# > 微信公众号去广告 by Choler&NoByDa
-WeChat.js = type=http-response,requires-body=1,max-size=-1,pattern=^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
 
 # > 什么值得买去广告 By blackmatrix7
 SMZDM.js = type=http-response,requires-body=1,max-size=-1,pattern=^https?:\/\/(s|a(pp|rticle)|h(aojia|omepage))-api\.smzdm\.com\/((hom|util\/updat|article\/index_home_pag)e|sou)(\/list\?)?,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js

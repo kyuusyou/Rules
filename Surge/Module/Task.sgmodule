@@ -11,12 +11,6 @@ Crontab: 京东 = type=cron,cronexp="10 0 * * *",script-path=https://raw.githubu
 # > 百度贴吧签到 by chavyleung
 Crontab: 百度贴吧 = type=cron,cronexp="9,12 0,1 * * *",script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.js
 
-# > Acfun App 签到 by chavyleung
-Crontab: Acfun = type=cron,cronexp="1 9 * * *",script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/acfun/acfun.js
-
-# > 美团 DailyBonus by chavyleung
-//Crontab: 美团 = type=cron,cronexp="2 9 * * *",script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js
-
 # > 饿了么 DailyBonus by blackmatrix7
 Tasks: 饿了么_领取吃货豆 = type=cron,cronexp="3 9 * * *",timeout=60,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/eleme/eleme_daily.js
 // Tasks: 饿了么_领取任务 = type=cron,cronexp=”53 9 * * *“,timeout=60,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/eleme/eleme_mission.js
@@ -54,5 +48,3 @@ Crontab: 飞客茶馆 = type=cron,cronexp="12 9 * * *",script-path=https://raw.g
 # > 顺丰速运 DailyBonus by chavyleung
 Tasks: 顺丰速运 = type=cron,cronexp="14 9 * * *",script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.js
 
-# > 万达电影 DailyBonus by blackmatrix7
-Tasks: 万达电影 = type=cron,cronexp="15 9 * * *",timeout=10,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/wanda/wanda_checkin.js
