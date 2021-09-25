@@ -1,0 +1,45 @@
+#!name=Get Cookies
+#!desc=Cookies 获取成功后可禁用此模块
+#!system=ios
+
+[MITM]
+hostname = %APPEND% mobwsa.ximalaya.com,*.smzdm.com,api.m.jd.com,ifac*.iqiyi.com,*.video.qq.com,v.qq.com,*.bilibili.com,passport.biligame.com,music.163.com,tieba.baidu.com,sf-integral-sign-in.weixinjia.net,ccsp-egmas.sf-express.com,h5.ele.me,www.flyert.com
+
+[Script]
+# > 百度贴吧签到 by chavyleung
+Cookie: 百度贴吧 = type=http-request,pattern=^https?:\/\/tieba\.baidu\.com\/?.?,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.cookie.js
+
+# > 京东 GetCookie by NobyDa
+// https://bean.m.jd.com/
+Cookie: 京东 = type=http-request,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+
+# > 爱奇艺 GetCookie by NobyDa
+Cookie: 爱奇艺 = type=http-request,pattern=^https?:\/\/iface(\d)?\.iqiyi\.com\/,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
+
+# > 腾讯视频 GetCookie by chavyleung
+// https://film.qq.com/ 随便选一部电影观看
+Cookie: 腾讯视频 = type=http-request,pattern=^https?:\/\/access.video.qq.com\/user\/auth_refresh,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.cookie.js
+
+# > 哔哩哔哩直播 GetCookie by chavyleung
+// https://live.bilibili.com/
+Cookie: 哔哩哔哩 = type=http-request,pattern=^https?:\/\/(www|live)\.bilibili\.com\/?.?,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.cookie.js
+
+# > 哔哩哔哩漫画 GetCookie by NobyDa
+Cookie: 哔哩哔哩漫画 = type=http-request,pattern=^https?:\/\/passport\.biligame\.com\/api\/login\/sso.+?version%22%3A%22(3|4|5),script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Bilibili-DailyBonus/Manga.js
+
+# > 网易云音乐 GetCookie by chavyleung
+// 先登录: https://music.163.com/m/login，再访问: https://music.163.com/#/user/level
+Cookie: 网易云音乐 = type=http-request,pattern=^https?:\/\/music\.163\.com\/weapi\/user\/level,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.cookie.js,requires-body=true
+
+# > 喜马拉雅 FM GetCookie by chavyleung
+Cookie: 喜马拉雅 = type=http-request,pattern=^https?:\/\/.*\/mobile\-user\/homePage\/.*,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.cookie.js
+
+# > 什么值得买 GetCookie by blackmatrix7
+Cookie: 什么值得买 = type=http-request,requires-body=true,pattern=^https?:\/\/zhiyou\.smzdm\.com\/user$,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_signin.js
+
+# > 飞客茶馆 GetCookie by chavyleung
+//www.flyert.com
+Cookie: 飞客茶馆 = type=http-request,pattern=^https:\/\/www\.flyert\.com\/source\/plugin\/mobile\/mobile\.php\?module=getdata&.*,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/flyertea/flyertea.cookie.js,requires-body=true
+
+# > 顺丰速运 GetCookie by chavyleung
+Cookie: 顺丰速运 = type=http-request,pattern=^https?:\/\/ccsp-egmas.sf-express.com\/cx-app-member\/member\/app\/user\/universalSign,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.cookie.js,requires-body=true

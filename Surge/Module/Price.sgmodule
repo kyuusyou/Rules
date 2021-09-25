@@ -1,0 +1,15 @@
+#!name=Historical Price
+#!desc=Display jd&tb historical price
+#!system=ios
+
+[MITM]
+hostname = %INSERT% api.m.jd.com
+
+[Script]
+# > JD App 显示历史价格 by yichahucha
+jd_price.js = type=http-response,requires-body=1,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
+
+# > Taobao App 显示历史价格 by yichahucha
+# hostname:trade-acs.m.taobao.com
+# tb_price.js = type=http-request,requires-body=1,pattern=^http://.+/amdc/mobileDispatch,script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
+# tb_price.js = type=http-response,requires-body=1,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail,script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
