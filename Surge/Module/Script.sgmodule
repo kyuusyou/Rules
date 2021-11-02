@@ -3,7 +3,7 @@
 #!system=ios
 
 [MITM]
-hostname = %INSERT% *.uve.weibo.com,api.weibo.cn,mapi.weibo.com,mp.weixin.qq.com,api.picsart.c*,api.meiease.c*,vsco.co,static.zhihu.com
+hostname = %INSERT% *.uve.weibo.com,api.weibo.cn,mapi.weibo.com,mp.weixin.qq.com,api.picsart.c*,api.meiease.c*,vsco.co,api.revenuecat.com,static.zhihu.com
 
 [Rule]
 # > 微信公众号
@@ -29,4 +29,4 @@ WeChat.js = type=http-response,requires-body=1,max-size=-1,pattern=^https?:\/\/m
 PicsArt.js = type=http-response,requires-body=1,max-size=-1,pattern=https:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/PicsArt.js
 
 # > VSCO Pro by NoByDa
-vsco.js = type=http-response,requires-body=1,max-size=-1,pattern=https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
+vsco.js = type=http-response,requires-body=1,max-size=-1,pattern=^https:\/\/(api\.revenuecat\.com\/v\d\/subscribers|vsco\.co\/api\/subscriptions\/\d\.\d\/user-subscriptions)\/,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
