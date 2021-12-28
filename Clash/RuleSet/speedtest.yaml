@@ -1,0 +1,8 @@
+payload:  
+  # > Speedtest by Ookla
+  - DOMAIN-SUFFIX,fast.com
+  - DOMAIN-SUFFIX,ooklaserver.net
+  - DOMAIN-SUFFIX,speed.cloudflare.com
+  - DOMAIN-SUFFIX,netspeedtestmaster.com
+  - DOMAIN,speedtest.macpaw.com
+  - DOMAIN-KEYWORD,speedtest
