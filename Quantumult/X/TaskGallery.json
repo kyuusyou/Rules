@@ -2,14 +2,14 @@
     "name":"kyuusyou",
     "description":"Crontab Task Gallery",
     "task":[
-        "30 8 * * * https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js, tag=爱奇艺, img-url=https://raw.githubusercontent.com/HotKids/Rules/master/Quantumult/X/Images/Task/iqiyi.png",
-        "10 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js, tag=腾讯视频, img-url=https://raw.githubusercontent.com/HotKids/Rules/master/Quantumult/X/Images/Task/tencentvideo.png",
-        "8 5 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js, tag=哔哩哔哩, img-url=https://raw.githubusercontent.com/HotKids/Rules/master/Quantumult/X/Images/Task/bilibili.png",
-        "9 5 * * * https://raw.githubusercontent.com/NobyDa/Script/master/Bilibili-DailyBonus/Manga.js, tag=哔哩哔哩漫画, img-url=https://raw.githubusercontent.com/HotKids/Rules/master/Quantumult/X/Images/Task/bilibilimanga.png",
-        "10 5 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/quanx/neteasemusic.js, tag=网易云音乐, img-url=https://raw.githubusercontent.com/HotKids/Rules/master/Quantumult/X/Images/Task/neteasemusic.png",
-        "25 5 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/flyertea/flyertea.js, tag=飞客茶馆, img-url=https://raw.githubusercontent.com/HotKids/Rules/master/Quantumult/X/Images/Task/flyertea.png",
-        "12 5 * * * https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_signin.js, tag=什么值得买_签到, img-url=https://raw.githubusercontent.com/HotKids/Rules/master/Quantumult/X/Images/Task/smzdm.png",
-        "13 5 * * * https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_mission.js, tag=什么值得买_任务, img-url=https://raw.githubusercontent.com/HotKids/Rules/master/Quantumult/X/Images/Task/smzdm.png",
-        "15 5 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.js, tag=顺丰速运, img-url=https://raw.githubusercontent.com/HotKids/Rules/master/Quantumult/X/Images/Task/sfexpress.png"
+        "3 7 * * * https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js, tag=爱奇艺, img-url=https://raw.githubusercontent.com/HotKids/Rules/master/Quantumult/X/Images/Task/iqiyi.png",
+        "5 7 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js, tag=腾讯视频, img-url=https://raw.githubusercontent.com/HotKids/Rules/master/Quantumult/X/Images/Task/tencentvideo.png",
+        "7 7 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js, tag=哔哩哔哩, img-url=https://raw.githubusercontent.com/HotKids/Rules/master/Quantumult/X/Images/Task/bilibili.png",
+        "9 7 * * * https://raw.githubusercontent.com/NobyDa/Script/master/Bilibili-DailyBonus/Manga.js, tag=哔哩哔哩漫画, img-url=https://raw.githubusercontent.com/HotKids/Rules/master/Quantumult/X/Images/Task/bilibilimanga.png",
+        "11 7 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/quanx/neteasemusic.js, tag=网易云音乐, img-url=https://raw.githubusercontent.com/HotKids/Rules/master/Quantumult/X/Images/Task/neteasemusic.png",
+        "13 7 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/flyertea/flyertea.js, tag=飞客茶馆, img-url=https://raw.githubusercontent.com/HotKids/Rules/master/Quantumult/X/Images/Task/flyertea.png",
+        "15 7 * * * https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_signin.js, tag=什么值得买_签到, img-url=https://raw.githubusercontent.com/HotKids/Rules/master/Quantumult/X/Images/Task/smzdm.png",
+        "17 7 * * * https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_mission.js, tag=什么值得买_任务, img-url=https://raw.githubusercontent.com/HotKids/Rules/master/Quantumult/X/Images/Task/smzdm.png",
+        "19 7 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.js, tag=顺丰速运, img-url=https://raw.githubusercontent.com/HotKids/Rules/master/Quantumult/X/Images/Task/sfexpress.png"
     ]
 }
