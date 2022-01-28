@@ -10,6 +10,7 @@
         "13 7 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/flyertea/flyertea.js, tag=飞客茶馆, img-url=https://raw.githubusercontent.com/HotKids/Rules/master/Quantumult/X/Images/Task/flyertea.png",
         "15 7 * * * https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_signin.js, tag=什么值得买_签到, img-url=https://raw.githubusercontent.com/HotKids/Rules/master/Quantumult/X/Images/Task/smzdm.png",
         "17 7 * * * https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_mission.js, tag=什么值得买_任务, img-url=https://raw.githubusercontent.com/HotKids/Rules/master/Quantumult/X/Images/Task/smzdm.png",
-        "19 7 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.js, tag=顺丰速运, img-url=https://raw.githubusercontent.com/HotKids/Rules/master/Quantumult/X/Images/Task/sfexpress.png"
+        "19 7 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.js, tag=顺丰速运, img-url=https://raw.githubusercontent.com/HotKids/Rules/master/Quantumult/X/Images/Task/sfexpress.png",
+        "21 7 * * * https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_checkin.js, tag=贴吧签到, img-url=https://raw.githubusercontent.com/HotKids/Rules/master/Quantumult/X/Images/Task/tieba.png"
     ]
 }
