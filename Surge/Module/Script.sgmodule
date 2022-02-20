@@ -3,7 +3,7 @@
 #!system=ios
 
 [MITM]
-hostname = %INSERT% *.uve.weibo.com,api.weibo.cn,mapi.weibo.com,mp.weixin.qq.com,api.picsart.c*,api.meiease.c*,vsco.co,api.revenuecat.com,static.zhihu.com
+hostname = %INSERT% *.uve.weibo.com,api.weibo.cn,mapi.weibo.com,mp.weixin.qq.com,boxer.baidu.com,api.picsart.c*,api.meiease.c*,vsco.co,api.revenuecat.com,static.zhihu.com
 
 [Rule]
 # > 微信公众号
@@ -24,6 +24,9 @@ wb_launch.js = type=http-response,requires-body=1,pattern=^https?:\/\/(sdk|wb)ap
 
 # > 微信公众号去广告 by Choler&NoByDa
 WeChat.js = type=http-response,requires-body=1,max-size=-1,pattern=^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
+
+# > 百度搜索防跳转 App Store by app2smile
+baidu-no-redirect.js = type=http-response,pattern=^https?:\/\/boxer\.baidu\.com\/scheme\?scheme,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/baidu-no-redirect.js
 
 # > PicsArt Pro by NoByDa
 PicsArt.js = type=http-response,requires-body=1,max-size=-1,pattern=https:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/PicsArt.js
