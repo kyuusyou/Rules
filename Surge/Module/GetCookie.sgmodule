@@ -3,7 +3,7 @@
 #!system=ios
 
 [MITM]
-hostname = %APPEND% passport.iqiyi.com,*.video.qq.com,v.qq.com,*.bilibili.com,app.bilibili.com,music.163.com,www.flyert.com,zhiyou.smzdm.com,ccsp-egmas.sf-express.com,c.tieba.baidu.com
+hostname = %APPEND% passport.iqiyi.com,*.video.qq.com,v.qq.com,*.bilibili.com,app.bilibili.com,music.163.com,www.flyert.com,zhiyou.smzdm.com,ccsp-egmas.sf-express.com,c.tieba.baidu.com,hweb-mbf.huazhu.com
 
 [Script]
 # > 爱奇艺 GetCookie by NobyDa
@@ -40,7 +40,11 @@ Cookie: 什么值得买 = type=http-request,requires-body=true,pattern=^https?:\
 // ccsp-egmas.sf-express.com
 Cookie: 顺丰速运 = type=http-request,pattern=^https?:\/\/ccsp-egmas.sf-express.com\/cx-app-member\/member\/app\/user\/universalSign,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.cookie.js,requires-body=true
 
-# > 百度贴吧签到 by blackmatrix7
+# > 百度贴吧 GetCookie by blackmatrix7
 // c.tieba.baidu.com
 Cookie: 新版百度贴吧 = type=http-request,pattern=^https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_checkin.js
 Cookie: 旧版百度贴吧 = type=http-request,pattern=^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/channelIconConfig,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_checkin.js
+
+# > 华住会 GetCookie by evilbutcher
+// hweb-mbf.huazhu.com
+Cookie: 华住会 = type=http-request,pattern=https:\/\/hweb-mbf\.huazhu\.com\/api\/signIn,script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/hzh/hzh.js,requires-body=false
