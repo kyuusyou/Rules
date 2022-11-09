@@ -1,0 +1,17 @@
+#!name=Apple
+#!desc=Apple自定义规则
+
+[Rule]
+# 屏蔽macOS更新
+# PROCESS-NAME,softwareupdated,REJECT-DROP
+# PROCESS-NAME,SoftwareUpdateNotificationManager,REJECT-DROP
+DOMAIN,gnf-mdn.apple.com,REJECT-DROP
+DOMAIN,gnf-mr.apple.com,REJECT-DROP
+DOMAIN,gs.apple.com,REJECT-DROP
+DOMAIN,ig.apple.com,REJECT-DROP
+DOMAIN,skl.apple.com,REJECT-DROP
+DOMAIN,swcdn.apple.com,REJECT-DROP
+DOMAIN,swdist.apple.com,REJECT-DROP
+DOMAIN,swdownload.apple.com,REJECT-DROP
+DOMAIN,swpost.apple.com,REJECT-DROP
+DOMAIN,swscan.apple.com,REJECT-DROP
