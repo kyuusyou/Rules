@@ -102,7 +102,7 @@ URL-REGEX,^https?:\/\/wx[0-9]\.sinaimg\.cn\/large\/.+\.gif$,REJECT
 微博钱包订单 = type=http-response,pattern=(^https?:\/\/js\.t\.sinajs\.cn\/c2p\/sam\/frontend\/assets\/walletcache\.json|^https?:\/\/pay\.sc\.weibo\.com\/api\/client\/sdk\/app\/indexnew\/(index|person)|^https?:\/\/shop\.sc\.weibo\.com\/aj\/h5\/order\/center),requires-body=1,max-size=0,script-path=https://hub.nange.cn/Script/Weibo/Wallet.js
 
 # > 微博配置注入
-微博去广告配置注入 = type=cron,cronexp="0 0 1 ? * MON",debug=1,script-path=https://raw.githubusercontent.com/HotKids/Rules/master/Script/weibo.js
+微博去广告配置注入 = type=cron,cronexp="0 0 1 ? * MON",debug=1,script-path=https://raw.githubusercontent.com/kyuusyou/Rules/master/Script/weibo.js
 
 [MITM]
 hostname = %APPEND% *.uve.weibo.com, *api.weibo.cn, *api.weibo.com, h5.sinaimg.cn, new.vip.weibo.cn, *.sc.weibo.com, captcha.weibo.com, wx*.sinaimg.cn, js.t.sinajs.cn, *.e.weibo.com
