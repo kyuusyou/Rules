@@ -35,7 +35,7 @@ const mainConfig = {
 	// profileSkin1: null,	//用户页：自定义 我的相册 - 客服 8个图标（需要8项），如果不需要设置为profileSkin1: null
 	// profileSkin2: ["https://wx2.sinaimg.cn/large/006Y6guWly1gvjeajhmrnj6046046jro02.jpg","https://wx2.sinaimg.cn/large/006Y6guWly1gvjeajmgs0j60460460t102.jpg","https://wx2.sinaimg.cn/large/006Y6guWly1gvjeajp9uuj6046046jrp02.jpg","https://wx2.sinaimg.cn/large/006Y6guWly1gvjeajrwrwj6046046dg102.jpg"],		//用户页：自定义 创作首页 - 任务中心 4个图标（需要4项），如果不需要设置为profileSkin2: null
 
-	// profileSkin1: null,
+	profileSkin1: null,
 	// profileSkin2: ["http://ww4.sinaimg.cn/mw690/acf865f8ly1geywluvq88g2074074gol.gif","http://ww4.sinaimg.cn/mw690/acf865f8ly1geywlu5xujg2074074gok.gif","http://ww4.sinaimg.cn/mw690/acf865f8ly1geywltdtcgg207407477b.gif","http://ww4.sinaimg.cn/mw690/acf865f8ly1geywlt2k73g2074074dhg.gif"],
 
 	tabIconVersion: 0,	//配置大于100的数才生效
