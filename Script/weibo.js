@@ -7,7 +7,7 @@ const mainConfig = {
 
 	//个人中心配置，其中多数是可以直接在更多功能里直接移除
 	removeHomeVip: false,				//个人中心头像旁边的vip样式
-	removeHomeCreatorTask: true,		//个人中心创作者中心下方的轮播图
+	removeHomeCreatorTask: false,		//个人中心创作者中心下方的轮播图
 
 	//微博详情页配置
 	removeRelate: true,			//相关推荐
